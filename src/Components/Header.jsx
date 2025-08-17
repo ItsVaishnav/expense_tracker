@@ -58,7 +58,8 @@ export default function Header() {
                   >
                     <use xlink:href="#speedometer2"></use>
                   </svg>
-                  Dashboard
+                  <Link to="/" className="text-white text-decoration-none">Dashboard</Link>
+                  
                 </a>{" "}
               </li>{" "}
               <li>
@@ -129,11 +130,11 @@ export default function Header() {
           <div className="text-end">
             {" "}
             <button type="button" className="btn btn-light text-dark me-2">
-                <Link to="/login">Login</Link>
+                <Link to="/login" className='text-dark text-decoration-none'>Login</Link>
       
                 </button>{" "}
-            <button type="button" className="btn btn-info">
-              <Link to="/register">Sign-up</Link>
+            <button type="button" className="btn btn-primary">
+              <Link to="/register" className='text-white text-decoration-none'>Sign-up</Link>
             </button>{" "}
           </div>{" "}
         </div>{" "}

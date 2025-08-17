@@ -23,9 +23,9 @@ export default function Login() {
         <form className="w-50 shadow-lg p-4 rounded bg-light" onSubmit={handleOnSubmit}>
           <img
             className="mb-4"
-            src="https://static.vecteezy.com/system/resources/previews/011/717/204/non_2x/big-pile-of-egyptian-pound-notes-a-lot-of-money-over-transparent-background-3d-rendering-of-bundles-of-cash-free-png.png"
+            src="https://www.pngall.com/wp-content/uploads/2016/03/Money-PNG-Pic.png"
             alt="App Logo"
-            width="150"
+            width="130"
             height="100"
           />
 
