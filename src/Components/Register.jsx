@@ -3,10 +3,10 @@ import { useState } from "react";
 function Register() {
   const [formData, setFormData] = useState({
     name: "",
+    phone: "",
     email: "",
     password: "",
     confirmPassword: "",
-    currency: "INR",
   });
 
   const handleChange = (e) => {
@@ -47,6 +47,20 @@ function Register() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              
+              {/* Full Name */}
+              <div className="mb-3">
+                <label className="form-label">Phone </label>
+                <input
+                  type="phone"
+                  className="form-control"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Enter your phone Number"
                   required
                 />
               </div>
@@ -91,22 +105,6 @@ function Register() {
                   placeholder="Re-enter password"
                   required
                 />
-              </div>
-
-              {/* Currency Preference */}
-              <div className="mb-3">
-                <label className="form-label">Currency</label>
-                <select
-                  className="form-select"
-                  name="currency"
-                  value={formData.currency}
-                  onChange={handleChange}
-                >
-                  <option value="INR">INR (₹)</option>
-                  <option value="USD">USD ($)</option>
-                  <option value="EUR">EUR (€)</option>
-                  <option value="GBP">GBP (£)</option>
-                </select>
               </div>
 
               {/* Submit Button */}
